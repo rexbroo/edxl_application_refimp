@@ -1,0 +1,100 @@
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+            <div id="indexLeftColumn">
+                <div id="welcomeText">
+                    <p style="font-size:larger;padding:10px;text-align:justify">Welcome to the start page for composing
+                        your Emergency Data Exchange Language (EDXL) Message.<br>
+                        
+                    <p style="font-size:smaller;padding:10px;text-align:justify">First choose the EDXL Message Type you 
+                        need from among the message types shown in the panel to the right. Alternatively, you can start by composing 
+                        <a href="#">EDXL-DE-v1.0</a> or <a href="#">EDXL-DE-v2.0</a> for your message
+                            
+                    <p style="font-size:smaller;padding:10px;text-align:justify">In subsequent pages you review, 
+                        approve and send  your message to its intended addressee(s)/recipient(s) through the 
+                        EDXL Distribution Element (EDXL-DE) which wraps the electronic EDXL message payload 
+                        like the envelope of a postal letter.</p>
+                    
+                </div>
+            </div>
+
+            <div id="indexRightColumn">
+                <p id="edxlAppTitle">[ Start EDXL Message (below) or EDXL-DE<a href="#">-v1.0</a> or <a href="#">-v2.0</a> ]</p>
+                
+            <!--<c:forEach var="EDXLMsgType" items="${EDXLMsgType.rows}">
+                    <div class="edxlBox">
+                        <a href="EDXLMsgType?${EDXLMsgType.id}">
+
+                            <span class="edxlLabelText">${EDXLMsgType.name}</span>
+
+                            <img src="${initParam.EDXLMsgTypeImagePath}${EDXLMsgType.name}.jpg"
+                                 alt="${category.name}">
+                        </a>
+                    </div>
+                </c:forEach>
+            -->    
+                <div class="edxlBox">
+                    <a href="#">
+                        <span class="edxlLabelText">EDXL-CAP-v1.2</span><br>
+                        <span class="edxlLabelTextSmall">Common Alerting Protocol</span>
+                        <p/>
+                        <img src="img/EDXLMsgTypeImagesB/EDXL-CAP-v1.2.png"
+                            alt="EDXL-CAP-v1.2">
+                    </a>
+                </div>
+                <div class="edxlBox">
+                    <a href="#">
+                        <span class="edxlLabelText">EDXL-RM-v1.0</span><br>
+                        <span class="edxlLabelTextSmall">Resource Messaging</span>
+                        <p/>
+                        <img src="img/EDXLMsgTypeImagesB/EDXL-RM-v1.0.png"
+                            alt="EDXL-RM-v1.0">
+                    </a>
+                </div>
+                <div class="edxlBox">
+                    <a href="#">
+                        <span class="edxlLabelText">EDXL-HAVE-v2.0</span><br>
+                        <span class="edxlLabelTextSmall">Hospital AVailability Exchange</span>
+                        <p/>
+                        <img src="img/EDXLMsgTypeImagesB/EDXL-HAVE-v2.0.png"
+                            alt="EDXL-HAVE-v2.0">
+                    </a>
+                </div>
+                <div class="edxlBox">
+                    <a href="#">
+                        <span class="edxlLabelText">EDXL-TEP-v1.1</span><br>
+                        <span class="edxlLabelTextSmall">Tracking Emergency Patients</span>
+                        <p/>
+                        <img src="img/EDXLMsgTypeImagesB/EDXL-TEP-v1.1.png"
+                            alt="EDXL-TEP-v1.1">
+                    </a>
+                </div>
+                <div class="edxlBox">
+                    <a href="#">
+                        <span class="edxlLabelText">EDXL-TEC-v1.0</span><br>
+                        <span class="edxlLabelTextSmall">Tracking Emrgncy Clients Rgstry</span>
+                        <p/>
+                        <img src="img/EDXLMsgTypeImagesB/EDXL-TEC-v1.0.png"
+                            alt="EDXL-TEC-v1.0">
+                    </a>
+                </div>
+                <div class="edxlBox">
+                    <a href="#">
+                        <span class="edxlLabelText">EDXL-SitRep-v1.0</span><br>
+                        <span class="edxlLabelTextSmall">Situation Reporting</span>
+                        <p/>
+                        <img src="img/EDXLMsgTypeImagesB/EDXL-SitRep-v1.0.png"
+                            alt="EDXL-SitRep-v1.0">
+                    </a>
+                </div>
+            </div>
+
+            
+            
